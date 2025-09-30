@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import Hero from "@/components/home/hero"
 import Features from "@/components/features"
+import TechnologiesSection from "@/components/technologies-section"
 import WhatWeDontDo from "@/components/what-we-dont-do"
 import { TestimonialsSection } from "@/components/testimonials"
 import { NewReleasePromo } from "@/components/new-release-promo"
@@ -114,25 +115,6 @@ export default function Home() {
             className="relative px-3 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer whitespace-nowrap"
             onClick={(e) => {
               e.preventDefault()
-              const element = document.getElementById("pricing")
-              if (element) {
-                const headerOffset = 120 // Account for sticky header height + margin
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
-                const offsetPosition = elementPosition - headerOffset
-
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: "smooth",
-                })
-              }
-            }}
-          >
-            <span className="relative z-20">Precios</span>
-          </a>
-          <a
-            className="relative px-3 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer whitespace-nowrap"
-            onClick={(e) => {
-              e.preventDefault()
               const element = document.getElementById("testimonials")
               if (element) {
                 const headerOffset = 120 // Account for sticky header height + margin
@@ -190,6 +172,25 @@ export default function Home() {
             className="relative px-3 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer whitespace-nowrap"
             onClick={(e) => {
               e.preventDefault()
+              const element = document.getElementById("pricing")
+              if (element) {
+                const headerOffset = 120 // Account for sticky header height + margin
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+                const offsetPosition = elementPosition - headerOffset
+
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth",
+                })
+              }
+            }}
+          >
+            <span className="relative z-20">Precios</span>
+          </a>
+          <a
+            className="relative px-3 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer whitespace-nowrap"
+            onClick={(e) => {
+              e.preventDefault()
               const element = document.getElementById("faq")
               if (element) {
                 const headerOffset = 120 // Account for sticky header height + margin
@@ -209,7 +210,9 @@ export default function Home() {
 
         <div className="flex items-center gap-4">
           <a
-            href="/signup"
+            href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
           >
             Contactar
@@ -268,12 +271,6 @@ export default function Home() {
                 Servicios
               </button>
               <button
-                onClick={() => handleMobileNavClick("pricing")}
-                className="text-left px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
-              >
-                Precios
-              </button>
-              <button
                 onClick={() => handleMobileNavClick("testimonials")}
                 className="text-left px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
               >
@@ -292,6 +289,12 @@ export default function Home() {
                 Proyectos
               </button>
               <button
+                onClick={() => handleMobileNavClick("pricing")}
+                className="text-left px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
+              >
+                Precios
+              </button>
+              <button
                 onClick={() => handleMobileNavClick("faq")}
                 className="text-left px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
               >
@@ -299,7 +302,9 @@ export default function Home() {
               </button>
               <div className="border-t border-border/50 pt-4 mt-4 flex flex-col space-y-3">
                 <a
-                  href="/signup"
+                  href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-3 text-lg font-bold text-center bg-gradient-to-b from-primary to-primary/80 text-primary-foreground rounded-lg shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Contactar
@@ -333,14 +338,17 @@ export default function Home() {
 
       <NewReleasePromo />
 
-      {/* Pricing Section */}
-      <div id="pricing">
-        <PricingSection />
-      </div>
-
       {/* Projects Section */}
       <div id="projects">
         <ProjectsSection />
+      </div>
+
+      {/* Technologies Section */}
+      <TechnologiesSection />
+
+      {/* Pricing Section */}
+      <div id="pricing">
+        <PricingSection />
       </div>
 
       {/* FAQ Section */}

@@ -132,7 +132,9 @@ export function StickyFooter() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <a
-                href="/signup"
+                href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-[#121113] text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
               >
                 Contactar

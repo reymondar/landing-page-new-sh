@@ -24,11 +24,10 @@ export function NewReleasePromo() {
           <div className="relative z-10">
             <div className="mt-8 text-center px-4">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
-                En Stack House nos especializamos en el trato personalizado 1:1 con nuestros clientes.
+                Construimos tu confianza, no solo tu app
               </h2>
               <p className="text-white/60 mb-8 text-sm sm:text-base max-w-3xl mx-auto">
-                Trabajamos de manera muy cercana con nuestros clientes, brindando atención al detalle y máxima confianza
-                en cada proyecto.
+                Acceso 24/7 a tu aplicación y progreso en tiempo real. Reuniones semanales con demos funcionales. Pagos por hitos alcanzados, no por adelantado. Ves resultados antes de cada pago
               </p>
               <svg
                 width="100"

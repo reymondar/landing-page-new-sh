@@ -32,7 +32,7 @@ export default function LoginPage() {
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
-        <span>Back to Home</span>
+        <span>Volver al Inicio</span>
       </Link>
 
       {/* Background gradient */}
@@ -64,8 +64,8 @@ export default function LoginPage() {
               </svg>
             </div>
           </Link>
-          <h1 className="text-3xl font-bold text-white mb-2">Welcome back</h1>
-          <p className="text-zinc-400">Sign in to your account to continue</p>
+          <h1 className="text-3xl font-bold text-white mb-2">Bienvenido de vuelta</h1>
+          <p className="text-zinc-400">Inicia sesión en tu cuenta para continuar</p>
         </div>
 
         {/* Login Form */}
@@ -78,12 +78,12 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="email" className="text-white">
-                Email
+                Correo Electrónico
               </Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Ingresa tu correo electrónico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 focus:border-[#e78a53] focus:ring-[#e78a53]/20"
@@ -93,12 +93,12 @@ export default function LoginPage() {
 
             <div className="space-y-2">
               <Label htmlFor="password" className="text-white">
-                Password
+                Contraseña
               </Label>
               <Input
                 id="password"
                 type="password"
-                placeholder="Enter your password"
+                placeholder="Ingresa tu contraseña"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 focus:border-[#e78a53] focus:ring-[#e78a53]/20"
@@ -112,10 +112,10 @@ export default function LoginPage() {
                   type="checkbox"
                   className="rounded border-zinc-700 bg-zinc-800 text-[#e78a53] focus:ring-[#e78a53]/20"
                 />
-                <span className="text-zinc-300">Remember me</span>
+                <span className="text-zinc-300">Recordarme</span>
               </label>
               <Link href="#" className="text-sm text-[#e78a53] hover:text-[#e78a53]/80">
-                Forgot password?
+                ¿Olvidaste tu contraseña?
               </Link>
             </div>
 
@@ -124,15 +124,15 @@ export default function LoginPage() {
               disabled={isLoading}
               className="w-full bg-[#e78a53] hover:bg-[#e78a53]/90 text-white font-medium py-3 rounded-xl transition-colors"
             >
-              {isLoading ? "Signing in..." : "Sign in"}
+              {isLoading ? "Iniciando sesión..." : "Iniciar Sesión"}
             </Button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-zinc-400">
-              Don't have an account?{" "}
+              ¿No tienes una cuenta?{" "}
               <Link href="/signup" className="text-[#e78a53] hover:text-[#e78a53]/80 font-medium">
-                Sign up
+                Regístrate
               </Link>
             </p>
           </div>
@@ -150,7 +150,7 @@ export default function LoginPage() {
               <div className="w-full border-t border-zinc-800" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-black text-zinc-500">Or continue with</span>
+              <span className="px-2 bg-black text-zinc-500">O continúa con</span>
             </div>
           </div>
 

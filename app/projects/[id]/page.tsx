@@ -10,119 +10,119 @@ import { useState, useEffect } from "react"
 const projects = [
   {
     id: "business-profile-platform",
-    title: "Business Profile Platform",
-    subtitle: "Businesses listing platform",
-    category: "Web App",
+    title: "Plataforma de Perfiles Empresariales",
+    subtitle: "Plataforma de listado de empresas",
+    category: "Aplicación Web",
     year: "2024",
-    duration: "2025 - Present",
-    status: "Live",
-    description: "Modern business valuation and profile platform with secure listing capabilities",
-    overview: "Community Platform to Value, List & Sell Your Business Securely. Based from Figma designs, developed in collaboration with a SEO expert, designers, and another developer following industry best practices and modern development standards.",
+    duration: "2025 - Presente",
+    status: "En Vivo",
+    description: "Plataforma moderna de valoración empresarial y perfiles con capacidades de listado seguro",
+    overview: "Plataforma Comunitaria para Valorar, Listar y Vender tu Empresa de Forma Segura. Basada en diseños de Figma, desarrollada en colaboración con un experto en SEO, diseñadores y otro desarrollador siguiendo las mejores prácticas de la industria y estándares modernos de desarrollo.",
     website: "https://confettilist.com",
-    backgroundImage: "/lovable-uploads/8188e18b-befa-45e5-9282-cca3c3bf8ca0.png",
-    screenshotImage: "/lovable-uploads/8188e18b-befa-45e5-9282-cca3c3bf8ca0.png",
+    backgroundImage: "/CONFETTI.png",
+    screenshotImage: "/CONFETTI.png",
     technology: {
       stack: "Bubble.io",
       technologies: ["Bubble.io"],
       stackTags: ["bubble"]
     },
-    role: "Full-stack development, SEO optimization, collaborative design implementation, and performance optimization",
+    role: "Desarrollo full-stack, optimización SEO, implementación de diseño colaborativo y optimización de rendimiento",
     features: [
-      "Showcase Your Business: Create a professional profile to highlight your business strengths and value proposition",
-      "Benchmark Performance: Compare your business performance against industry standards and competitors",
-      "Instant Valuations: Get immediate business worth estimates using advanced valuation algorithms",
-      "Connect with Buyers: Access a network of qualified buyers and investors looking for opportunities"
+      "Muestra tu Empresa: Crea un perfil profesional para destacar las fortalezas y propuesta de valor de tu empresa",
+      "Compara Rendimiento: Compara el rendimiento de tu empresa con estándares de la industria y competidores",
+      "Valoraciones Instantáneas: Obtén estimaciones inmediatas del valor de tu empresa usando algoritmos avanzados de valoración",
+      "Conecta con Compradores: Accede a una red de compradores e inversores calificados buscando oportunidades"
     ]
   },
   {
     id: "majella",
     title: "Majella",
-    subtitle: "Event managing platform (MVP)",
-    category: "Web App",
+    subtitle: "Plataforma de gestión de eventos (MVP)",
+    category: "Aplicación Web",
     year: "2025",
-    duration: "May 2025 - Present",
-    status: "Live",
-    description: "Experiential engagement platform that transforms how people show up, participate, and build value at live events and beyond",
-    overview: "Innovative event platform that transforms passive participation into active contribution through gamification. It contains management tools and custom-made scheduler for specific client purposes.",
+    duration: "Mayo 2025 - Presente",
+    status: "En Vivo",
+    description: "Plataforma de participación experiencial que transforma cómo las personas aparecen, participan y construyen valor en eventos en vivo y más allá",
+    overview: "Plataforma de eventos innovadora que transforma la participación pasiva en contribución activa a través de gamificación. Contiene herramientas de gestión y programador personalizado para propósitos específicos del cliente.",
     website: "https://www.majella.io/",
-    backgroundImage: "/lovable-uploads/492cc0bb-4864-434b-8b51-3608bf9520d7.png",
-    screenshotImage: "/lovable-uploads/492cc0bb-4864-434b-8b51-3608bf9520d7.png",
+    backgroundImage: "/MAJELLA.png",
+    screenshotImage: "/MAJELLA.png",
     technology: {
       stack: "Bubble.io + n8n",
       technologies: ["Bubble.io", "n8n"],
       stackTags: ["bubble", "n8n"]
     },
-    role: "Full-stack development, workflow automation design, custom scheduler implementation, and gamification system architecture",
+    role: "Desarrollo full-stack, diseño de automatización de flujos de trabajo, implementación de programador personalizado y arquitectura de sistema de gamificación",
     features: [
-      "Event Discovery: Search events, topics, or locations to find the perfect experiences for your interests",
-      "Gamified Engagement: Transform passive attendance into active participation through interactive challenges and rewards",
-      "Event Management: Comprehensive tools for organizers to create, manage, and optimize events",
-      "Marketplace Integration: List events in the marketplace and connect with qualified participants and buyers"
+      "Descubrimiento de Eventos: Busca eventos, temas o ubicaciones para encontrar las experiencias perfectas para tus intereses",
+      "Participación Gamificada: Transforma la asistencia pasiva en participación activa a través de desafíos interactivos y recompensas",
+      "Gestión de Eventos: Herramientas integrales para organizadores para crear, gestionar y optimizar eventos",
+      "Integración de Marketplace: Lista eventos en el marketplace y conecta con participantes y compradores calificados"
     ]
   },
   {
     id: "golf-it",
     title: "Golf It",
-    subtitle: "AI-powered golf course finder",
-    category: "Progressive Web App",
+    subtitle: "Buscador de campos de golf con IA",
+    category: "Aplicación Web Progresiva",
     year: "2025",
-    duration: "January 2025 - Present",
-    status: "In Development",
-    description: "Mobile web app for finding golf courses with AI matchmaking",
-    overview: "Progressive web app to find golf courses connected to Mapbox with AI user match-making system. Features location-based course discovery and intelligent recommendations based on user preferences.",
+    duration: "Enero 2025 - Presente",
+    status: "En Desarrollo",
+    description: "Aplicación web móvil para encontrar campos de golf con emparejamiento por IA",
+    overview: "Aplicación web progresiva para encontrar campos de golf conectada a Mapbox con sistema de emparejamiento de usuarios por IA. Características de descubrimiento de campos basado en ubicación y recomendaciones inteligentes basadas en preferencias del usuario.",
     website: "https://golfitargentina.com/",
-    backgroundImage: "/lovable-uploads/0a839296-7cc1-4b7d-a1c7-156a6f399ec3.png",
-    screenshotImage: "/lovable-uploads/0a839296-7cc1-4b7d-a1c7-156a6f399ec3.png",
+    backgroundImage: "/Golf It.png",
+    screenshotImage: "/Golf It.png",
     technology: {
       stack: "Lovable + n8n + Supabase",
-      technologies: ["Lovable", "React + TypeScript", "Supabase", "n8n Automation", "Mapbox Integration", "Progressive Web App"],
+      technologies: ["Lovable", "React + TypeScript", "Supabase", "Automatización n8n", "Integración Mapbox", "Aplicación Web Progresiva"],
       stackTags: ["react", "n8n"]
     },
-    role: "Full-Stack Developer & AI Specialist - Leading development of the PWA, AI matchmaking system, Mapbox integration, and n8n workflow automation",
+    role: "Desarrollador Full-Stack y Especialista en IA - Liderando el desarrollo de la PWA, sistema de emparejamiento por IA, integración Mapbox y automatización de flujos de trabajo n8n",
     features: [
-      "AI-powered matchmaking system for personalized course recommendations",
-      "Interactive map integration with Mapbox for precise location services",
-      "Comprehensive golf course database with detailed information",
-      "Real-time availability and booking capabilities",
-      "User profile system with skill level and preference tracking",
-      "Progressive Web App functionality for mobile-first experience",
-      "Social features for connecting with other golfers",
-      "Weather integration for optimal playing conditions",
-      "Course reviews and rating system",
-      "Automated workflow management with n8n"
+      "Sistema de emparejamiento por IA para recomendaciones personalizadas de campos",
+      "Integración de mapa interactivo con Mapbox para servicios de ubicación precisos",
+      "Base de datos integral de campos de golf con información detallada",
+      "Capacidades de disponibilidad y reserva en tiempo real",
+      "Sistema de perfil de usuario con seguimiento de nivel de habilidad y preferencias",
+      "Funcionalidad de Aplicación Web Progresiva para experiencia móvil primero",
+      "Características sociales para conectar con otros golfistas",
+      "Integración del clima para condiciones óptimas de juego",
+      "Sistema de reseñas y calificaciones de campos",
+      "Gestión automatizada de flujos de trabajo con n8n"
     ],
     innovations: [
-      "AI Matchmaking Algorithm",
-      "Real-time Location Services",
-      "Progressive Web App",
-      "Automated Workflows"
+      "Algoritmo de Emparejamiento por IA",
+      "Servicios de Ubicación en Tiempo Real",
+      "Aplicación Web Progresiva",
+      "Flujos de Trabajo Automatizados"
     ]
   },
   {
     id: "jobs-next-tech",
     title: "Jobs Next Tech",
-    subtitle: "Recruitment platform",
-    category: "Website",
+    subtitle: "Plataforma de reclutamiento",
+    category: "Sitio Web",
     year: "2024",
-    duration: "May - December 2024",
-    status: "Live",
-    description: "Niche Future Jobs - Building the largest database of curated experts in upcoming niche tech sectors",
-    overview: "Online platform that aims to build the largest curated database of experts in fields such as immersive technologies (AR/VR), video games, artificial intelligence, Flutter development, and quantum computing. I integrated into this large-scale existing project, contributing to development based on established Figma design files and implementing workflow automation features.",
+    duration: "Mayo - Diciembre 2024",
+    status: "En Vivo",
+    description: "Trabajos de Nicho Futuro - Construyendo la base de datos más grande de expertos curados en sectores tecnológicos de nicho emergentes",
+    overview: "Plataforma en línea que tiene como objetivo construir la base de datos curada más grande de expertos en campos como tecnologías inmersivas (AR/VR), videojuegos, inteligencia artificial, desarrollo Flutter y computación cuántica. Me integré en este proyecto existente a gran escala, contribuyendo al desarrollo basado en archivos de diseño Figma establecidos e implementando características de automatización de flujos de trabajo.",
     website: "https://www.jobsinnexttech.com/",
-    backgroundImage: "/lovable-uploads/6f04b510-199d-4b53-9931-c742d946f1fe.png",
-    screenshotImage: "/lovable-uploads/6f04b510-199d-4b53-9931-c742d946f1fe.png",
+    backgroundImage: "/placeholder.svg",
+    screenshotImage: "/placeholder.svg",
     technology: {
       stack: "Bubble.io + Supabase + Zapier",
       technologies: ["Bubble.io", "Supabase", "Zapier"],
       stackTags: ["bubble"]
     },
-    role: "Integration developer working with established Figma designs, workflow automation implementation, and feature enhancement within existing architecture",
+    role: "Desarrollador de integración trabajando con diseños Figma establecidos, implementación de automatización de flujos de trabajo y mejora de características dentro de la arquitectura existente",
     specializedSectors: [
-      "🥽 jobs in XR: Immersive technologies including AR/VR and extended reality experiences",
-      "🎮 jobs in Gaming: Video game development, design, and interactive entertainment",
-      "🤖 jobs in AI: Artificial intelligence, machine learning, and automation technologies",
-      "⚡ jobs in Flutter: Cross-platform mobile development with Flutter framework",
-      "⚛️ jobs in Quantum: Quantum computing and advanced computational sciences"
+      "🥽 trabajos en XR: Tecnologías inmersivas incluyendo AR/VR y experiencias de realidad extendida",
+      "🎮 trabajos en Gaming: Desarrollo de videojuegos, diseño y entretenimiento interactivo",
+      "🤖 trabajos en IA: Inteligencia artificial, aprendizaje automático y tecnologías de automatización",
+      "⚡ trabajos en Flutter: Desarrollo móvil multiplataforma con framework Flutter",
+      "⚛️ trabajos en Quantum: Computación cuántica y ciencias computacionales avanzadas"
     ]
   },
   {
@@ -136,8 +136,8 @@ const projects = [
     description: "High-performance startup website with perfect Lighthouse scores for wireless charging technology",
     overview: "Website page for startup business with 100 Lighthouse score report, designed and developed independently. Transformando la energía en Latinoamérica con Carga Inalámbrica - wireless charging technology for Latin America.",
     website: "#",
-    backgroundImage: "/lovable-uploads/5a1fe0d9-eaae-4c78-beaf-1cd735333fa2.png",
-    screenshotImage: "/lovable-uploads/5a1fe0d9-eaae-4c78-beaf-1cd735333fa2.png",
+    backgroundImage: "/NIT CHARGE.png",
+    screenshotImage: "/NIT CHARGE.png",
     technology: {
       stack: "React.js + Vercel.js + Firestore",
       technologies: ["React.js", "Vercel", "Firestore"],
@@ -175,8 +175,8 @@ const projects = [
     description: "Real estate platform with admin dashboard and lead management",
     overview: "Real-estate page with backend dashboard for properties administration and lead management. Complete property management system with advanced search capabilities and contact management.",
     website: "https://delfinolynch.com.ar/",
-    backgroundImage: "/lovable-uploads/fbe3ffdc-1db0-4aff-9453-aef4e6c1ecb9.png",
-    screenshotImage: "/lovable-uploads/fbe3ffdc-1db0-4aff-9453-aef4e6c1ecb9.png",
+    backgroundImage: "/DELFINO LYNCH.png",
+    screenshotImage: "/DELFINO LYNCH.png",
     technology: {
       stack: "WordPress",
       technologies: ["WordPress", "Custom PHP Development", "MySQL Database"],
@@ -204,8 +204,8 @@ const projects = [
     description: "Corporate website for waste management solutions",
     overview: "Waste solutions company page with over 30 sections all pulled from Figma. Comprehensive corporate website showcasing environmental services and waste management solutions.",
     website: "https://molokna.com/about-us/",
-    backgroundImage: "/lovable-uploads/1482c129-1075-4692-a2bf-eaec6aec1dc6.png",
-    screenshotImage: "/lovable-uploads/1482c129-1075-4692-a2bf-eaec6aec1dc6.png",
+    backgroundImage: "/molokna.png",
+    screenshotImage: "/molokna.png",
     technology: {
       stack: "WordPress",
       technologies: ["WordPress", "Custom Theme Development", "Figma to WordPress", "Advanced Custom Fields"],
@@ -239,8 +239,8 @@ const projects = [
     description: "Administrative platform with integrated blog system",
     overview: "Administrative page with blog site. Created on Figma from scratch with complete design system and content management capabilities for educational administration.",
     website: "https://sadop.edu.ar/",
-    backgroundImage: "/lovable-uploads/1dfc7708-cf1a-422e-b46e-a2caed89fe93.png",
-    screenshotImage: "/lovable-uploads/1dfc7708-cf1a-422e-b46e-a2caed89fe93.png",
+    backgroundImage: "/Sadop.png",
+    screenshotImage: "/Sadop.png",
     technology: {
       stack: "WordPress",
       technologies: ["WordPress", "Custom Theme", "Figma Design System", "Custom Post Types"],
@@ -275,8 +275,8 @@ const projects = [
     description: "Complete e-commerce solution for cosmetics brand",
     overview: "E-commerce page designed & developed by our team completely. Full-featured online store with product catalog, shopping cart, and payment integration for cosmetics and beauty products.",
     website: "https://englacosmetics.com/",
-    backgroundImage: "/lovable-uploads/ea572ab5-8d36-4c25-b487-5cf6fbd19a67.png",
-    screenshotImage: "/lovable-uploads/ea572ab5-8d36-4c25-b487-5cf6fbd19a67.png",
+    backgroundImage: "/ENGLA.png",
+    screenshotImage: "/ENGLA.png",
     technology: {
       stack: "WordPress E-commerce",
       technologies: ["WordPress", "WooCommerce", "Custom Theme", "Payment Gateways"],
@@ -313,8 +313,8 @@ const projects = [
     description: "AI-powered legal platform for insolvency filing assistance with expert validation",
     overview: "Digitally assisted and fully expert-checked platform that helps GmbH directors and legal teams file insolvencies with confidence. Specialized service for Managing Directors of German GmbHs dealing with personal liability risks.",
     website: "#",
-    backgroundImage: "/lovable-uploads/cc5a66cc-ae7d-42ea-8ff8-33e9fed52ba3.png",
-    screenshotImage: "/lovable-uploads/cc5a66cc-ae7d-42ea-8ff8-33e9fed52ba3.png",
+    backgroundImage: "/SOLVENTIQ.png",
+    screenshotImage: "/SOLVENTIQ.png",
     technology: {
       stack: "Bubble.io + OpenAI + n8n",
       technologies: ["Bubble.io", "OpenAI", "n8n"],
@@ -349,11 +349,14 @@ const projects = [
 
 const getStatusColor = (status: string) => {
   switch (status) {
+    case "En Vivo":
     case "Live":
     case "Live & Selling":
       return "bg-green-500/20 text-green-400 border-green-500/30"
+    case "En Desarrollo":
     case "In Development":
       return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30"
+    case "Próximamente":
     case "Coming Soon":
       return "bg-blue-500/20 text-blue-400 border-blue-500/30"
     default:
@@ -572,24 +575,6 @@ export default function ProjectPage() {
           </div>
         </div>
 
-        {/* Screenshot */}
-        {project.screenshotImage && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <h3 className="text-2xl font-bold text-white mb-6">Captura de Pantalla</h3>
-            <div className="relative rounded-2xl overflow-hidden border border-white/10">
-              <img
-                src={project.screenshotImage}
-                alt={`${project.title} screenshot`}
-                className="w-full h-auto"
-              />
-            </div>
-          </motion.div>
-        )}
       </div>
     </div>
   )

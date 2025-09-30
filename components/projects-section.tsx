@@ -15,8 +15,8 @@ const projects = [
     status: "Live",
     description: "Modern business valuation and profile platform with secure listing capabilities",
     website: "https://confettilist.com",
-    backgroundImage: "/lovable-uploads/8188e18b-befa-45e5-9282-cca3c3bf8ca0.png",
-    screenshotImage: "/lovable-uploads/8188e18b-befa-45e5-9282-cca3c3bf8ca0.png",
+    backgroundImage: "/CONFETTI.png",
+    screenshotImage: "/CONFETTI.png",
     technology: {
       stack: "Bubble.io",
       technologies: ["Bubble.io"],
@@ -34,8 +34,8 @@ const projects = [
     status: "Live",
     description: "Experiential engagement platform that transforms how people show up, participate, and build value at live events and beyond",
     website: "https://www.majella.io/",
-    backgroundImage: "/lovable-uploads/492cc0bb-4864-434b-8b51-3608bf9520d7.png",
-    screenshotImage: "/lovable-uploads/492cc0bb-4864-434b-8b51-3608bf9520d7.png",
+    backgroundImage: "/MAJELLA.png",
+    screenshotImage: "/MAJELLA.png",
     technology: {
       stack: "Bubble.io + n8n",
       technologies: ["Bubble.io", "n8n"],
@@ -53,33 +53,14 @@ const projects = [
     status: "In Development",
     description: "Mobile web app for finding golf courses with AI matchmaking",
     website: "https://golfitargentina.com/",
-    backgroundImage: "/lovable-uploads/0a839296-7cc1-4b7d-a1c7-156a6f399ec3.png",
-    screenshotImage: "/lovable-uploads/0a839296-7cc1-4b7d-a1c7-156a6f399ec3.png",
+    backgroundImage: "/Golf It.png",
+    screenshotImage: "/Golf It.png",
     technology: {
       stack: "Lovable + n8n + Supabase",
       technologies: ["Lovable", "React + TypeScript", "Supabase", "n8n Automation", "Mapbox Integration", "Progressive Web App"],
       stackTags: ["react", "n8n"]
     },
     role: "Full-Stack Developer & AI Specialist - Leading development of the PWA, AI matchmaking system, Mapbox integration, and n8n workflow automation"
-  },
-  {
-    id: "jobs-next-tech",
-    title: "Jobs Next Tech",
-    subtitle: "Recruitment platform",
-    category: "Website",
-    year: "2024",
-    duration: "May - December 2024",
-    status: "Live",
-    description: "Niche Future Jobs - Building the largest database of curated experts in upcoming niche tech sectors",
-    website: "https://www.jobsinnexttech.com/",
-    backgroundImage: "/lovable-uploads/6f04b510-199d-4b53-9931-c742d946f1fe.png",
-    screenshotImage: "/lovable-uploads/6f04b510-199d-4b53-9931-c742d946f1fe.png",
-    technology: {
-      stack: "Bubble.io + Supabase + Zapier",
-      technologies: ["Bubble.io", "Supabase", "Zapier"],
-      stackTags: ["bubble"]
-    },
-    role: "Integration developer working with established Figma designs, workflow automation implementation, and feature enhancement within existing architecture"
   },
   {
     id: "nitfy",
@@ -91,8 +72,8 @@ const projects = [
     status: "Coming Soon",
     description: "High-performance startup website with perfect Lighthouse scores for wireless charging technology",
     website: "#",
-    backgroundImage: "/lovable-uploads/5a1fe0d9-eaae-4c78-beaf-1cd735333fa2.png",
-    screenshotImage: "/lovable-uploads/5a1fe0d9-eaae-4c78-beaf-1cd735333fa2.png",
+    backgroundImage: "/NIT CHARGE.png",
+    screenshotImage: "/NIT CHARGE.png",
     technology: {
       stack: "React.js + Vercel.js + Firestore",
       technologies: ["React.js", "Vercel", "Firestore"],
@@ -111,8 +92,8 @@ const projects = [
     location: "Argentina",
     description: "Real estate platform with admin dashboard and lead management",
     website: "https://delfinolynch.com.ar/",
-    backgroundImage: "/lovable-uploads/fbe3ffdc-1db0-4aff-9453-aef4e6c1ecb9.png",
-    screenshotImage: "/lovable-uploads/fbe3ffdc-1db0-4aff-9453-aef4e6c1ecb9.png",
+    backgroundImage: "/DELFINO LYNCH.png",
+    screenshotImage: "/DELFINO LYNCH.png",
     technology: {
       stack: "WordPress",
       technologies: ["WordPress", "Custom PHP Development", "MySQL Database"],
@@ -130,8 +111,8 @@ const projects = [
     status: "Live",
     description: "Corporate website for waste management solutions",
     website: "https://molokna.com/about-us/",
-    backgroundImage: "/lovable-uploads/1482c129-1075-4692-a2bf-eaec6aec1dc6.png",
-    screenshotImage: "/lovable-uploads/1482c129-1075-4692-a2bf-eaec6aec1dc6.png",
+    backgroundImage: "/molokna.png",
+    screenshotImage: "/molokna.png",
     technology: {
       stack: "WordPress",
       technologies: ["WordPress", "Custom Theme Development", "Figma to WordPress", "Advanced Custom Fields"],
@@ -149,8 +130,8 @@ const projects = [
     status: "Live",
     description: "Administrative platform with integrated blog system",
     website: "https://sadop.edu.ar/",
-    backgroundImage: "/lovable-uploads/1dfc7708-cf1a-422e-b46e-a2caed89fe93.png",
-    screenshotImage: "/lovable-uploads/1dfc7708-cf1a-422e-b46e-a2caed89fe93.png",
+    backgroundImage: "/Sadop.png",
+    screenshotImage: "/Sadop.png",
     technology: {
       stack: "WordPress",
       technologies: ["WordPress", "Custom Theme", "Figma Design System", "Custom Post Types"],
@@ -168,8 +149,8 @@ const projects = [
     status: "Live & Selling",
     description: "Complete e-commerce solution for cosmetics brand",
     website: "https://englacosmetics.com/",
-    backgroundImage: "/lovable-uploads/ea572ab5-8d36-4c25-b487-5cf6fbd19a67.png",
-    screenshotImage: "/lovable-uploads/ea572ab5-8d36-4c25-b487-5cf6fbd19a67.png",
+    backgroundImage: "/ENGLA.png",
+    screenshotImage: "/ENGLA.png",
     technology: {
       stack: "WordPress E-commerce",
       technologies: ["WordPress", "WooCommerce", "Custom Theme", "Payment Gateways"],
@@ -187,8 +168,8 @@ const projects = [
     status: "In Development",
     description: "AI-powered legal platform for insolvency filing assistance with expert validation",
     website: "#",
-    backgroundImage: "/lovable-uploads/cc5a66cc-ae7d-42ea-8ff8-33e9fed52ba3.png",
-    screenshotImage: "/lovable-uploads/cc5a66cc-ae7d-42ea-8ff8-33e9fed52ba3.png",
+    backgroundImage: "/SOLVENTIQ.png",
+    screenshotImage: "/SOLVENTIQ.png",
     technology: {
       stack: "Bubble.io + OpenAI + n8n",
       technologies: ["Bubble.io", "OpenAI", "n8n"],

@@ -42,17 +42,20 @@ export function FinalCTASection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <motion.button
+            <motion.a
+              href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 bg-gradient-to-r from-[#e78a53] to-[#e78a53]/80 text-white font-bold rounded-full shadow-lg shadow-[#e78a53]/25 hover:shadow-[#e78a53]/40 transition-all duration-300"
+              className="group relative px-8 py-4 bg-gradient-to-r from-[#e78a53] to-[#e78a53]/80 text-white font-bold rounded-full shadow-lg shadow-[#e78a53]/25 hover:shadow-[#e78a53]/40 transition-all duration-300 inline-block"
             >
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5" />
                 <span>Agendar Consulta Gratuita</span>
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300" />
-            </motion.button>
+            </motion.a>
 
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}

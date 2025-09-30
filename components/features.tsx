@@ -11,12 +11,33 @@ import { FollowerPointerCard } from "./ui/following-pointer"
 import { useTheme } from "next-themes"
 
 const featuresData = [
-  { text: "Aplicaciones Web", icon: "💻" },
-  { text: "E-commerce", icon: "🛒" },
-  { text: "Dashboards", icon: "📊" },
-  { text: "Apps Móviles", icon: "📱" },
-  { text: "APIs", icon: "🔗" },
-  { text: "Automatización", icon: "⚡" },
+  {
+    title: "Opera en automático",
+    features: [
+      "Automatización de procesos",
+      "Dashboards en tiempo real", 
+      "Integraciones con tus herramientas"
+    ],
+    icon: "⚡"
+  },
+  {
+    title: "Escala sin límites",
+    features: [
+      "Infraestructura preparada para la demanda",
+      "Nuevas funciones en días, no en meses",
+      "Tu equipo puede modificarlo sin nosotros"
+    ],
+    icon: "🚀"
+  },
+  {
+    title: "Integralo a tu tecnología actual",
+    features: [
+      "Migración de datos sin pérdida",
+      "Compatible con tu stack actual",
+      "Sin interrumpir operaciones"
+    ],
+    icon: "🔗"
+  }
 ]
 
 export default function Features() {
@@ -26,7 +47,6 @@ export default function Features() {
   const [isHovering, setIsHovering] = useState(false)
   const [isCliHovering, setIsCliHovering] = useState(false)
   const [isFeature3Hovering, setIsFeature3Hovering] = useState(false)
-  const [isFeature4Hovering, setIsFeature4Hovering] = useState(false)
   const [inputValue, setInputValue] = useState("")
 
   const [baseColor, setBaseColor] = useState<[number, number, number]>([0.906, 0.541, 0.325]) // #e78a53 in RGB normalized
@@ -75,8 +95,8 @@ export default function Features() {
           }
         >
           <div className="cursor-none">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-7xl mx-auto">
-              {/* Cli */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+              {/* Cli - Opera en automático */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative flex flex-col overflow-hidden rounded-xl border-2 p-4 sm:p-6 shadow-xl transition-all ease-in-out min-h-[400px] sm:min-h-[450px]"
                 onMouseEnter={() => setIsCliHovering(true)}
@@ -93,10 +113,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Diseñamos sobre la eficiencia</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">{featuresData[0].title}</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Planeamos la digitalización sobre los procesos que ya realizas, para que se ejecuten sin perder un solo cliente.
+                      {featuresData[0].features.join(" • ")}
                     </p>
                   </div>
                 </div>
@@ -170,7 +190,7 @@ export default function Features() {
                       <div className="flex items-center gap-8">
                         {/* Left Column */}
                         <div className="flex flex-col gap-3">
-                          {featuresData.slice(0, 3).map((item, index) => (
+                          {featuresData[0].features.slice(0, 2).map((item, index) => (
                             <motion.div
                               key={`left-${index}`}
                               className="bg-white rounded px-3 py-2 flex items-center gap-2 text-black text-sm font-medium shadow-sm"
@@ -183,9 +203,9 @@ export default function Features() {
                               whileHover={{ scale: 1.05 }}
                             >
                               <div className="w-4 h-4 flex items-center justify-center">
-                                <span className="text-xs">{item.icon}</span>
+                                <span className="text-xs">⚡</span>
                               </div>
-                              {item.text}
+                              {item}
                             </motion.div>
                           ))}
                         </div>
@@ -203,7 +223,7 @@ export default function Features() {
 
                         {/* Right Column */}
                         <div className="flex flex-col gap-3">
-                          {featuresData.slice(3).map((item, index) => (
+                          {featuresData[0].features.slice(2).map((item, index) => (
                             <motion.div
                               key={`right-${index}`}
                               className="bg-white rounded px-3 py-2 flex items-center gap-2 text-black text-sm font-medium shadow-sm"
@@ -216,9 +236,9 @@ export default function Features() {
                               whileHover={{ scale: 1.05 }}
                             >
                               <div className="w-4 h-4 flex items-center justify-center">
-                                <span className="text-xs">{item.icon}</span>
+                                <span className="text-xs">⚡</span>
                               </div>
-                              {item.text}
+                              {item}
                             </motion.div>
                           ))}
                         </div>
@@ -256,7 +276,7 @@ export default function Features() {
                 </div>
               </motion.div>
 
-              {/* Global */}
+              {/* Global - Escala sin límites */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative flex flex-col overflow-hidden rounded-xl border-2 p-4 sm:p-6 shadow-xl transition-all ease-in-out min-h-[400px] sm:min-h-[450px]"
                 onMouseEnter={() => setIsHovering(true)}
@@ -273,10 +293,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Construimos aplicaciones a tu imagen</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">{featuresData[1].title}</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Que puedas utilizar fácilmente, se adapte a las técnicas de tu negocio y permita una medición fácil de resultados.
+                      {featuresData[1].features.join(" • ")}
                     </p>
                   </div>
                 </div>
@@ -313,7 +333,7 @@ export default function Features() {
                 </div>
               </motion.div>
 
-              {/* Smart Components */}
+              {/* Smart Components - Integralo a tu tecnología actual */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative flex flex-col overflow-hidden rounded-xl border-2 p-4 sm:p-6 shadow-xl transition-all ease-in-out min-h-[400px] sm:min-h-[450px]"
                 onMouseEnter={() => setIsFeature3Hovering(true)}
@@ -329,11 +349,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Creación de ideas innovadoras</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">{featuresData[2].title}</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Tus ideas valen oro. Convertimos tu concepto en una solución que genere resultados reales y
-                      conecte con tu audiencia.
+                      {featuresData[2].features.join(" • ")}
                     </p>
                   </div>
                 </div>
@@ -343,7 +362,7 @@ export default function Features() {
                       <div className="p-4">
                         <textarea
                           className="w-full min-h-[60px] sm:min-h-[80px] bg-transparent border-none text-white placeholder:text-white/50 resize-none focus:outline-none text-sm sm:text-base leading-relaxed"
-                          placeholder="Search the web..."
+                          placeholder="Integrando con tu stack actual..."
                           value={inputValue}
                           onChange={(e) => setInputValue(e.target.value)}
                           onKeyDown={handleKeyDown}
@@ -383,7 +402,7 @@ export default function Features() {
                               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                               <path d="M2 12h20"></path>
                             </svg>
-                            Search
+                            Integrar
                           </button>
                         </div>
                         <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
@@ -405,43 +424,6 @@ export default function Features() {
                         </button>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Dynamic Layouts */}
-              <motion.div
-                className="group border-secondary/40 text-card-foreground relative flex flex-col overflow-hidden rounded-xl border-2 p-4 sm:p-6 shadow-xl transition-all ease-in-out min-h-[400px] sm:min-h-[450px]"
-                onMouseEnter={() => setIsFeature4Hovering(true)}
-                onMouseLeave={() => setIsFeature4Hovering(false)}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                transition={{ duration: 0.5, delay: 1.0 }}
-                whileHover={{
-                  rotateY: 5,
-                  rotateX: 2,
-                  boxShadow: "0 20px 40px rgba(231, 138, 83, 0.3)",
-                  borderColor: "rgba(231, 138, 83, 0.6)",
-                }}
-                style={{ transition: "all 0s ease-in-out" }}
-              >
-                <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Digitalización de negocios</h3>
-                  <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
-                    <p className="max-w-[460px]">
-                      Lleva tu negocio al siguiente nivel. Escalamos tu operación y automatizamos procesos con
-                      tecnología de vanguardia.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex grow items-center justify-center select-none relative min-h-[200px] sm:min-h-[250px] p-2 sm:p-4">
-                  <div className="relative w-full max-w-sm">
-                    <img
-                      src="/modern-grid-layout.png"
-                      alt="Dynamic Layout Example"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
                   </div>
                 </div>
               </motion.div>

@@ -8,24 +8,24 @@ const teamMembers = [
     name: "Owen Haiek",
     role: "Head of Development",
     description:
-      "Experto en arquitecturas escalables y tecnologías de vanguardia. 5+ años creando soluciones que transforman negocios.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+      "Ha construido sistemas que procesan +100k transacciones diarias sin caerse. Obsesionado con código limpio que tu próximo desarrollador pueda entender.",
+    image: "/owen.png",
     skills: ["React", "Node.js", "AWS", "TypeScript"],
   },
   {
-    name: "Ramón Arana",
+    name: "Ramon Arana",
     role: "Lead Project Manager",
     description:
-      "Especialista en metodologías ágiles y entrega de proyectos. Garantiza que tu proyecto se complete a tiempo y dentro del presupuesto.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+      "En 6 años, nunca ha entregado un proyecto tarde. Su regla de oro: si no cabe en 12 semanas, lo partimos en fases que SÍ funcionen.",
+    image: "/ramon.png",
     skills: ["Scrum", "Kanban", "Jira", "Slack"],
   },
   {
-    name: "Cristina Pérez",
+    name: "Cristina",
     role: "Design Manager",
     description:
-      "Creadora de experiencias digitales excepcionales. Combina estética moderna con funcionalidad intuitiva para maximizar la conversión.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face",
+      "Diseña interfaces que tu equipo puede usar sin capacitación. Si necesitas un manual de usuario para tu sistema, ella lo rehace.",
+    image: "/cristina.jpeg",
     skills: ["Figma", "Adobe XD", "UI/UX", "Prototyping"],
   },
 ]
@@ -54,11 +54,11 @@ export function TeamSection() {
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent mb-4">
-            Pequeño Equipo, soluciones a medida
+            Equipo boutique, atención personalizada
           </h2>
 
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
-            Más de 6 años construyendo aplicaciones para empresas por todo el mundo
+            Sin intermediarios ni equipos rotativos. Tres especialistas dedicados que conocen tu negocio de principio a fin
           </p>
         </motion.div>
 
@@ -109,14 +109,17 @@ export function TeamSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <p className="text-white/60 mb-4">¿Quieres conocer más sobre nuestro proceso de trabajo?</p>
-          <motion.button
+          <p className="text-white/60 mb-4">¿Cómo trabajamos exactamente? Te lo explicamos en 15 minutos</p>
+          <motion.a
+            href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="text-[#e78a53] hover:text-[#e78a53]/80 font-medium transition-colors"
           >
             Agenda una reunión con el equipo →
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

@@ -47,7 +47,7 @@ export default function SignupPage() {
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
-        <span>Back to Home</span>
+        <span>Volver al Inicio</span>
       </Link>
 
       {/* Background gradient */}
@@ -79,8 +79,8 @@ export default function SignupPage() {
               </svg>
             </div>
           </Link>
-          <h1 className="text-3xl font-bold text-white mb-2">Create account</h1>
-          <p className="text-zinc-400">Join thousands of developers building with v0</p>
+          <h1 className="text-3xl font-bold text-white mb-2">Crear cuenta</h1>
+          <p className="text-zinc-400">Únete a miles de desarrolladores construyendo con v0</p>
         </div>
 
         {/* Signup Form */}
@@ -93,13 +93,13 @@ export default function SignupPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="name" className="text-white">
-                Full Name
+                Nombre Completo
               </Label>
               <Input
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Enter your full name"
+                placeholder="Ingresa tu nombre completo"
                 value={formData.name}
                 onChange={handleChange}
                 className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 focus:border-[#e78a53] focus:ring-[#e78a53]/20"
@@ -109,13 +109,13 @@ export default function SignupPage() {
 
             <div className="space-y-2">
               <Label htmlFor="email" className="text-white">
-                Email
+                Correo Electrónico
               </Label>
               <Input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Ingresa tu correo electrónico"
                 value={formData.email}
                 onChange={handleChange}
                 className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 focus:border-[#e78a53] focus:ring-[#e78a53]/20"
@@ -125,13 +125,13 @@ export default function SignupPage() {
 
             <div className="space-y-2">
               <Label htmlFor="password" className="text-white">
-                Password
+                Contraseña
               </Label>
               <Input
                 id="password"
                 name="password"
                 type="password"
-                placeholder="Create a password"
+                placeholder="Crea una contraseña"
                 value={formData.password}
                 onChange={handleChange}
                 className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 focus:border-[#e78a53] focus:ring-[#e78a53]/20"
@@ -141,13 +141,13 @@ export default function SignupPage() {
 
             <div className="space-y-2">
               <Label htmlFor="confirmPassword" className="text-white">
-                Confirm Password
+                Confirmar Contraseña
               </Label>
               <Input
                 id="confirmPassword"
                 name="confirmPassword"
                 type="password"
-                placeholder="Confirm your password"
+                placeholder="Confirma tu contraseña"
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 className="bg-zinc-800/50 border-zinc-700 text-white placeholder:text-zinc-500 focus:border-[#e78a53] focus:ring-[#e78a53]/20"
@@ -163,13 +163,13 @@ export default function SignupPage() {
                 required
               />
               <label htmlFor="terms" className="text-sm text-zinc-300">
-                I agree to the{" "}
+                Acepto los{" "}
                 <Link href="#" className="text-[#e78a53] hover:text-[#e78a53]/80">
-                  Terms of Service
+                  Términos de Servicio
                 </Link>{" "}
-                and{" "}
+                y{" "}
                 <Link href="#" className="text-[#e78a53] hover:text-[#e78a53]/80">
-                  Privacy Policy
+                  Política de Privacidad
                 </Link>
               </label>
             </div>
@@ -179,15 +179,15 @@ export default function SignupPage() {
               disabled={isLoading}
               className="w-full bg-[#e78a53] hover:bg-[#e78a53]/90 text-white font-medium py-3 rounded-xl transition-colors"
             >
-              {isLoading ? "Creating account..." : "Create account"}
+              {isLoading ? "Creando cuenta..." : "Crear cuenta"}
             </Button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-zinc-400">
-              Already have an account?{" "}
+              ¿Ya tienes una cuenta?{" "}
               <Link href="/login" className="text-[#e78a53] hover:text-[#e78a53]/80 font-medium">
-                Sign in
+                Iniciar sesión
               </Link>
             </p>
           </div>
@@ -205,7 +205,7 @@ export default function SignupPage() {
               <div className="w-full border-t border-zinc-800" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-black text-zinc-500">Or continue with</span>
+              <span className="px-2 bg-black text-zinc-500">O continúa con</span>
             </div>
           </div>
 

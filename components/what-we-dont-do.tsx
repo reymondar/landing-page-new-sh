@@ -8,25 +8,28 @@ import { cn } from "@/lib/utils"
 
 const whatWeDontDoData = [
   {
-    title: "No construimos productos genéricos",
-    description: "Interfaces fáciles de usar que se adapten a tus prioridades",
-    icon: "🚫",
-    color: "from-red-500/20 to-red-600/20",
-    borderColor: "border-red-500/30"
+    title: "Contratos transparentes",
+    subtitle: "Un solo precio. Para todo.",
+    description: "Te cotizamos una vez al inicio y ese es el precio final. Sin costos ocultos, sin 'ah, eso no estaba incluido', sin sorpresas a mitad del proyecto. Lo que acordamos es lo que pagas",
+    icon: "/contratos-transparentes.png",
+    color: "from-green-500/20 to-emerald-600/20",
+    borderColor: "border-green-500/30"
   },
   {
-    title: "No hacemos por hacer", 
-    description: "Hacemos para brindarte tiempo y mejores resultados para ti y tu equipo",
-    icon: "⚡",
+    title: "8-12 semanas. No 6 meses de juntas.",
+    subtitle: "",
+    description: "Odiamos las reuniones eternas tanto como tú. Lanzamos rápido porque sabemos que cada día sin tu sistema es dinero que pierdes. Reuniones cortas, avances reales",
+    icon: "/8-12-semanas.png",
     color: "from-yellow-500/20 to-orange-600/20", 
     borderColor: "border-yellow-500/30"
   },
   {
-    title: "No cobramos demás",
-    description: "Presupuestamos una única vez en función del alcance del producto",
-    icon: "💰",
-    color: "from-green-500/20 to-emerald-600/20",
-    borderColor: "border-green-500/30"
+    title: "Código tuyo, no nuestro rehén.",
+    subtitle: "",
+    description: "Cuando terminamos, TÚ eres dueño de todo. El código, los accesos, la documentación. No dependes de nosotros para siempre. Puedes irte con otro o mantenerlo tú mismo.",
+    icon: "/codigo tuyo.png",
+    color: "from-blue-500/20 to-cyan-600/20",
+    borderColor: "border-blue-500/30"
   }
 ]
 
@@ -58,7 +61,7 @@ export default function WhatWeDontDo() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Qué no hacemos
+            Contratos transparentes
           </motion.h2>
           
           <motion.p
@@ -67,7 +70,7 @@ export default function WhatWeDontDo() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Nuestra filosofía se basa en la transparencia y el compromiso con la excelencia
+            Transparencia total desde el día uno
           </motion.p>
         </div>
 
@@ -106,20 +109,31 @@ export default function WhatWeDontDo() {
               <div className="relative z-10">
                 {/* Icon */}
                 <motion.div
-                  className="mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center text-2xl"
+                  className="mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center"
                   whileHover={{ 
                     scale: 1.1, 
                     rotate: 5,
                     transition: { duration: 0.2 }
                   }}
                 >
-                  {item.icon}
+                  <img
+                    src={item.icon}
+                    alt={item.title}
+                    className="w-8 h-8 object-contain"
+                  />
                 </motion.div>
 
                 {/* Title */}
-                <h3 className="text-xl sm:text-2xl font-semibold tracking-tight mb-3 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl sm:text-2xl font-semibold tracking-tight mb-2 group-hover:text-primary transition-colors duration-300">
                   {item.title}
                 </h3>
+
+                {/* Subtitle */}
+                {item.subtitle && (
+                  <p className="text-lg font-medium text-primary mb-3 group-hover:text-primary/80 transition-colors duration-300">
+                    {item.subtitle}
+                  </p>
+                )}
 
                 {/* Description */}
                 <p className="text-muted-foreground text-sm sm:text-base leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">

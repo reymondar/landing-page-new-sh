@@ -6,52 +6,46 @@ import { useState } from "react"
 
 const pricingPlans = [
   {
-    name: "Aplicación Web",
-    price: "Desde $1,700 USD",
-    description: "Solución completa para tu presencia digital",
+    name: "Lanza tu MVP",
+    price: "€2,500",
+    originalPrice: "€3,500",
+    period: "por proyecto",
+    description: "Perfecto para validar tu idea rápidamente",
     features: [
-      "Diseño responsivo y moderno",
-      "Panel de administración intuitivo",
-      "Integración con APIs y servicios externos",
-      "Optimización SEO y velocidad",
-      "Hosting y dominio por 1 año",
-      "Soporte técnico 24/7",
-      "Actualizaciones de seguridad",
-      "Analytics y métricas integradas",
+      "Sistema funcional en 8 semanas",
+      "5-7 funcionalidades core",
+      "Listo para usuarios reales",
+      "Base para escalar después",
     ],
     popular: false,
-    cta: "Solicitar Cotización",
+    cta: "Contactar Ventas",
   },
   {
-    name: "Aplicación Móvil",
-    price: "Desde $5,000 USD",
-    description: "Lleva tu negocio al móvil con apps nativas",
+    name: "Digitaliza tu operación",
+    price: "€4,500",
+    originalPrice: "€6,500",
+    period: "por proyecto",
+    description: "La opción más popular para empresas en crecimiento",
     features: [
-      "Desarrollo nativo iOS y Android",
-      "Diseño UX/UI profesional",
-      "Integración con servicios en la nube",
-      "Notificaciones push personalizadas",
-      "Sistemas de pago integrados",
-      "Publicación en App Store y Google Play",
-      "Testing y QA completo",
-      "Mantenimiento por 6 meses",
+      "Sistema completo para tu negocio",
+      "Integraciones con tus herramientas",
+      "Automatización de procesos clave",
+      "Seguimiento de tu equipo",
     ],
     popular: true,
-    cta: "Solicitar Cotización",
+    cta: "Contactar Ventas",
   },
   {
-    name: "Software Personalizado",
-    price: "Cotización a medida",
-    description: "Soluciones empresariales completamente personalizadas",
+    name: "Escala sin límites",
+    price: "€8,500",
+    originalPrice: "€12,500",
+    period: "por proyecto",
+    description: "Solución completa para empresas establecidas",
     features: [
-      "Análisis completo de requerimientos",
-      "Arquitectura escalable y segura",
-      "Integración con sistemas existentes",
-      "Documentación técnica completa",
-      "Capacitación para tu equipo",
-      "Soporte post-lanzamiento",
-      "Escalabilidad garantizada",
-      "Metodologías ágiles",
+      "Arquitectura para alto volumen",
+      "Múltiples integraciones complejas",
+      "Equipo dedicado",
+      "Soporte premium",
     ],
     popular: false,
     cta: "Contactar Ventas",
@@ -118,9 +112,16 @@ export function PricingSection() {
 
               <div className="text-center mb-6">
                 <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">{plan.name}</h3>
-                <div className="flex items-baseline justify-center gap-1 mb-2">
-                  <span className="text-xs font-medium text-white/60">{plan.price}</span>
+                <div className="flex items-baseline justify-center gap-2 mb-2">
+                  <span className="text-3xl sm:text-4xl font-bold text-white">{plan.price}</span>
+                  {plan.originalPrice && (
+                    <span className="text-lg text-white/50 line-through">{plan.originalPrice}</span>
+                  )}
                 </div>
+                {plan.period && (
+                  <p className="text-white/60 text-sm">{plan.period}</p>
+                )}
+                <p className="text-white/70 text-sm mt-2">{plan.description}</p>
               </div>
 
               <ul className="space-y-3 mb-6 flex-grow">
@@ -132,17 +133,20 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <motion.button
+              <motion.a
+                href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`w-full py-3 px-6 rounded-lg font-medium transition-all duration-200 mt-auto ${
+                className={`w-full py-3 px-6 rounded-lg font-medium transition-all duration-200 mt-auto inline-block text-center ${
                   plan.popular
                     ? "bg-gradient-to-r from-[#e78a53] to-[#e78a53]/80 text-white shadow-lg shadow-[#e78a53]/25 hover:shadow-[#e78a53]/40"
                     : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
                 }`}
               >
                 {plan.cta}
-              </motion.button>
+              </motion.a>
             </motion.div>
           ))}
         </div>
@@ -161,7 +165,6 @@ export function PricingSection() {
             whileTap={{ scale: 0.95 }}
             className="text-[#e78a53] hover:text-[#e78a53]/80 font-medium transition-colors"
           >
-            Contacta a nuestro equipo de ventas →
           </motion.button>
         </motion.div>
       </div>
