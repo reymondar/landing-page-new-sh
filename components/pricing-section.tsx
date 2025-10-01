@@ -6,10 +6,10 @@ import { useState } from "react"
 
 const pricingPlans = [
   {
-    name: "Lanza tu MVP",
-    price: "€2,500",
-    originalPrice: "€3,500",
-    period: "por proyecto",
+    name: "Lanza tu web app",
+    price: "$1,700",
+    originalPrice: null,
+    period: null,
     description: "Perfecto para validar tu idea rápidamente",
     features: [
       "Sistema funcional en 8 semanas",
@@ -21,10 +21,10 @@ const pricingPlans = [
     cta: "Contactar Ventas",
   },
   {
-    name: "Digitaliza tu operación",
-    price: "€4,500",
-    originalPrice: "€6,500",
-    period: "por proyecto",
+    name: "Digitaliza tu negocio",
+    price: "$2,300",
+    originalPrice: null,
+    period: null,
     description: "La opción más popular para empresas en crecimiento",
     features: [
       "Sistema completo para tu negocio",
@@ -36,10 +36,10 @@ const pricingPlans = [
     cta: "Contactar Ventas",
   },
   {
-    name: "Escala sin límites",
-    price: "€8,500",
-    originalPrice: "€12,500",
-    period: "por proyecto",
+    name: "Escala sin Límites",
+    price: "$6,000+",
+    originalPrice: null,
+    period: null,
     description: "Solución completa para empresas establecidas",
     features: [
       "Arquitectura para alto volumen",
@@ -56,7 +56,7 @@ export function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false)
 
   return (
-    <section className="relative py-12 px-4">
+    <section className="relative py-12 sm:py-16 md:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -77,12 +77,12 @@ export function PricingSection() {
             <span className="text-sm font-medium text-white/80">Cotizemos tu proyecto juntos</span>
           </motion.div>
 
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent mb-4">
+          <h2 className="from-foreground/60 via-foreground to-foreground/60 dark:from-muted-foreground/55 dark:via-foreground dark:to-muted-foreground/55 mt-5 bg-gradient-to-r bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px] __className_bb4e88 relative z-10">
             Elige tu plan perfecto
           </h2>
 
           <p className="text-lg text-white/60 max-w-2xl mx-auto mb-8">
-            📞 Contáctanos para conocer más detalles y obtener tu propuesta personalizada
+            Contactanos y consegui tu cotizacion sin compromiso alguno
           </p>
         </motion.div>
 
@@ -112,15 +112,13 @@ export function PricingSection() {
 
               <div className="text-center mb-6">
                 <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">{plan.name}</h3>
+                <p className="text-white/60 text-sm mb-2">Desde</p>
                 <div className="flex items-baseline justify-center gap-2 mb-2">
                   <span className="text-3xl sm:text-4xl font-bold text-white">{plan.price}</span>
                   {plan.originalPrice && (
                     <span className="text-lg text-white/50 line-through">{plan.originalPrice}</span>
                   )}
                 </div>
-                {plan.period && (
-                  <p className="text-white/60 text-sm">{plan.period}</p>
-                )}
                 <p className="text-white/70 text-sm mt-2">{plan.description}</p>
               </div>
 
@@ -159,7 +157,7 @@ export function PricingSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <p className="text-white/60 mb-4">¿Necesitas una solución personalizada? Estamos aquí para ayudarte.</p>
+          <p className="text-white/60 mb-4">¿Necesitas una solución personalizada? Estamos para ayudarte.</p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

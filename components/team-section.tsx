@@ -8,7 +8,7 @@ const teamMembers = [
     name: "Owen Haiek",
     role: "Head of Development",
     description:
-      "Ha construido sistemas que procesan +100k transacciones diarias sin caerse. Obsesionado con código limpio que tu próximo desarrollador pueda entender.",
+      "Experto en arquitecturas escalables y tecnologías de vanguardia. 5+ años creando soluciones que transforman negocios.",
     image: "/owen.png",
     skills: ["React", "Node.js", "AWS", "TypeScript"],
   },
@@ -16,7 +16,7 @@ const teamMembers = [
     name: "Ramon Arana",
     role: "Lead Project Manager",
     description:
-      "En 6 años, nunca ha entregado un proyecto tarde. Su regla de oro: si no cabe en 12 semanas, lo partimos en fases que SÍ funcionen.",
+      "Especialista en metodologías ágiles y entrega de proyectos. Garantiza que tu proyecto se complete a tiempo y dentro del presupuesto.",
     image: "/ramon.png",
     skills: ["Scrum", "Kanban", "Jira", "Slack"],
   },
@@ -24,7 +24,7 @@ const teamMembers = [
     name: "Cristina",
     role: "Design Manager",
     description:
-      "Diseña interfaces que tu equipo puede usar sin capacitación. Si necesitas un manual de usuario para tu sistema, ella lo rehace.",
+      "Creadora de experiencias digitales excepcionales. Combina estética moderna con funcionalidad intuitiva para maximizar la conversión.",
     image: "/cristina.jpeg",
     skills: ["Figma", "Adobe XD", "UI/UX", "Prototyping"],
   },
@@ -32,7 +32,7 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="relative py-12 px-4">
+    <section id="team" className="relative py-12 sm:py-16 md:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -102,25 +102,6 @@ export function TeamSection() {
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-16"
-        >
-          <p className="text-white/60 mb-4">¿Cómo trabajamos exactamente? Te lo explicamos en 15 minutos</p>
-          <motion.a
-            href="https://wa.me/34660926641?text=Hola%2C%20me%20gustaria%20conversar%20acerca%20de%20una%20idea%20que%20tengo%20en%20mente"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-[#e78a53] hover:text-[#e78a53]/80 font-medium transition-colors"
-          >
-            Agenda una reunión con el equipo →
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   )

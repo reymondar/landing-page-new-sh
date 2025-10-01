@@ -10,12 +10,12 @@ import { useState, useEffect } from "react"
 const projects = [
   {
     id: "business-profile-platform",
-    title: "Plataforma de Perfiles Empresariales",
+    title: "Confetti",
     subtitle: "Plataforma de listado de empresas",
     category: "Aplicación Web",
     year: "2024",
     duration: "2025 - Presente",
-    status: "En Vivo",
+    status: "Live",
     description: "Plataforma moderna de valoración empresarial y perfiles con capacidades de listado seguro",
     overview: "Plataforma Comunitaria para Valorar, Listar y Vender tu Empresa de Forma Segura. Basada en diseños de Figma, desarrollada en colaboración con un experto en SEO, diseñadores y otro desarrollador siguiendo las mejores prácticas de la industria y estándares modernos de desarrollo.",
     website: "https://confettilist.com",
@@ -41,16 +41,16 @@ const projects = [
     category: "Aplicación Web",
     year: "2025",
     duration: "Mayo 2025 - Presente",
-    status: "En Vivo",
+    status: "Live",
     description: "Plataforma de participación experiencial que transforma cómo las personas aparecen, participan y construyen valor en eventos en vivo y más allá",
     overview: "Plataforma de eventos innovadora que transforma la participación pasiva en contribución activa a través de gamificación. Contiene herramientas de gestión y programador personalizado para propósitos específicos del cliente.",
     website: "https://www.majella.io/",
     backgroundImage: "/MAJELLA.png",
     screenshotImage: "/MAJELLA.png",
     technology: {
-      stack: "Bubble.io + n8n",
-      technologies: ["Bubble.io", "n8n"],
-      stackTags: ["bubble", "n8n"]
+      stack: "Bubble.io + n8n + Lovable",
+      technologies: ["Bubble.io", "n8n", "Lovable"],
+      stackTags: ["bubble", "n8n", "lovable"]
     },
     role: "Desarrollo full-stack, diseño de automatización de flujos de trabajo, implementación de programador personalizado y arquitectura de sistema de gamificación",
     features: [
@@ -76,7 +76,7 @@ const projects = [
     technology: {
       stack: "Lovable + n8n + Supabase",
       technologies: ["Lovable", "React + TypeScript", "Supabase", "Automatización n8n", "Integración Mapbox", "Aplicación Web Progresiva"],
-      stackTags: ["react", "n8n"]
+      stackTags: ["react", "n8n", "supabase"]
     },
     role: "Desarrollador Full-Stack y Especialista en IA - Liderando el desarrollo de la PWA, sistema de emparejamiento por IA, integración Mapbox y automatización de flujos de trabajo n8n",
     features: [
@@ -105,7 +105,7 @@ const projects = [
     category: "Sitio Web",
     year: "2024",
     duration: "Mayo - Diciembre 2024",
-    status: "En Vivo",
+    status: "Live",
     description: "Trabajos de Nicho Futuro - Construyendo la base de datos más grande de expertos curados en sectores tecnológicos de nicho emergentes",
     overview: "Plataforma en línea que tiene como objetivo construir la base de datos curada más grande de expertos en campos como tecnologías inmersivas (AR/VR), videojuegos, inteligencia artificial, desarrollo Flutter y computación cuántica. Me integré en este proyecto existente a gran escala, contribuyendo al desarrollo basado en archivos de diseño Figma establecidos e implementando características de automatización de flujos de trabajo.",
     website: "https://www.jobsinnexttech.com/",
@@ -128,14 +128,14 @@ const projects = [
   {
     id: "nitfy",
     title: "NiTFy",
-    subtitle: "Startup business website",
-    category: "Website",
-    year: "2023",
-    duration: "2023 - 2024",
-    status: "Coming Soon",
-    description: "High-performance startup website with perfect Lighthouse scores for wireless charging technology",
-    overview: "Website page for startup business with 100 Lighthouse score report, designed and developed independently. Transformando la energía en Latinoamérica con Carga Inalámbrica - wireless charging technology for Latin America.",
-    website: "#",
+    subtitle: "Sitio web de startup",
+    category: "Sitio Web",
+    year: "2024",
+    duration: "2024",
+    status: "Live",
+    description: "Sitio web de startup de alto rendimiento con puntuaciones perfectas de Lighthouse para tecnología de carga inalámbrica",
+    overview: "Página web para startup con reporte de puntuación Lighthouse de 100, diseñada y desarrollada independientemente. Transformando la energía en Latinoamérica con Carga Inalámbrica - tecnología de carga inalámbrica para América Latina.",
+    website: "https://nitcharge.com/",
     backgroundImage: "/NIT CHARGE.png",
     screenshotImage: "/NIT CHARGE.png",
     technology: {
@@ -143,7 +143,7 @@ const projects = [
       technologies: ["React.js", "Vercel", "Firestore"],
       stackTags: ["react"]
     },
-    role: "Designer & Developer - Complete independent development including UX/UI design, frontend development, performance optimization, and deployment",
+    role: "Diseñador y Desarrollador - Desarrollo independiente completo incluyendo diseño UX/UI, desarrollo frontend, optimización de rendimiento y despliegue",
     performanceMetrics: {
       performance: 100,
       accessibility: 100,
@@ -166,23 +166,23 @@ const projects = [
   {
     id: "delfino-lynch",
     title: "Delfino Lynch",
-    subtitle: "Real estate platform",
-    category: "Website",
+    subtitle: "Plataforma inmobiliaria",
+    category: "Sitio Web",
     year: "2023",
     duration: "2023",
     status: "Live",
     location: "Argentina",
-    description: "Real estate platform with admin dashboard and lead management",
-    overview: "Real-estate page with backend dashboard for properties administration and lead management. Complete property management system with advanced search capabilities and contact management.",
+    description: "Plataforma inmobiliaria con panel de administración y gestión de leads",
+    overview: "Página inmobiliaria con panel de administración backend para administración de propiedades y gestión de leads. Sistema completo de gestión de propiedades con capacidades de búsqueda avanzada y gestión de contactos.",
     website: "https://delfinolynch.com.ar/",
     backgroundImage: "/DELFINO LYNCH.png",
     screenshotImage: "/DELFINO LYNCH.png",
     technology: {
       stack: "WordPress",
-      technologies: ["WordPress", "Custom PHP Development", "MySQL Database"],
+      technologies: ["WordPress", "Desarrollo PHP Personalizado", "Base de Datos MySQL"],
       stackTags: ["wordpress"]
     },
-    role: "Full-Stack Developer - Responsible for complete development including frontend design, backend functionality, and dashboard implementation",
+    role: "Desarrollador Full-Stack - Responsable del desarrollo completo incluyendo diseño frontend, funcionalidad backend e implementación del panel",
     features: [
       "Advanced property search and filtering system",
       "Interactive property galleries with high-resolution images",
@@ -196,22 +196,22 @@ const projects = [
   {
     id: "molonka",
     title: "Molonka",
-    subtitle: "Waste solutions company",
-    category: "Website",
+    subtitle: "Empresa de soluciones de residuos",
+    category: "Sitio Web",
     year: "2024",
-    duration: "May - October 2024",
+    duration: "Mayo - Octubre 2024",
     status: "Live",
-    description: "Corporate website for waste management solutions",
-    overview: "Waste solutions company page with over 30 sections all pulled from Figma. Comprehensive corporate website showcasing environmental services and waste management solutions.",
+    description: "Sitio web corporativo para soluciones de gestión de residuos",
+    overview: "Página de empresa de soluciones de residuos con más de 30 secciones todas extraídas de Figma. Sitio web corporativo integral que muestra servicios ambientales y soluciones de gestión de residuos.",
     website: "https://molokna.com/about-us/",
     backgroundImage: "/molokna.png",
     screenshotImage: "/molokna.png",
     technology: {
       stack: "WordPress",
-      technologies: ["WordPress", "Custom Theme Development", "Figma to WordPress", "Advanced Custom Fields"],
+      technologies: ["WordPress", "Desarrollo de Tema Personalizado", "Figma a WordPress", "Campos Personalizados Avanzados"],
       stackTags: ["wordpress"]
     },
-    role: "WordPress Developer - Complete Figma-to-WordPress conversion, custom theme development, and performance optimization for 30+ sections",
+    role: "Desarrollador WordPress - Conversión completa de Figma a WordPress, desarrollo de tema personalizado y optimización de rendimiento para más de 30 secciones",
     features: [
       "30+ custom-designed sections from Figma",
       "Comprehensive service portfolio presentation",
@@ -231,22 +231,22 @@ const projects = [
   {
     id: "sadop",
     title: "SADOP",
-    subtitle: "Administrative platform",
-    category: "Website",
+    subtitle: "Plataforma administrativa",
+    category: "Sitio Web",
     year: "2024",
-    duration: "July - August 2024",
+    duration: "Julio - Agosto 2024",
     status: "Live",
-    description: "Administrative platform with integrated blog system",
-    overview: "Administrative page with blog site. Created on Figma from scratch with complete design system and content management capabilities for educational administration.",
+    description: "Plataforma administrativa con sistema de blog integrado",
+    overview: "Página administrativa con sitio de blog. Creada en Figma desde cero con sistema de diseño completo y capacidades de gestión de contenido para administración educativa.",
     website: "https://sadop.edu.ar/",
     backgroundImage: "/Sadop.png",
     screenshotImage: "/Sadop.png",
     technology: {
       stack: "WordPress",
-      technologies: ["WordPress", "Custom Theme", "Figma Design System", "Custom Post Types"],
+      technologies: ["WordPress", "Tema Personalizado", "Sistema de Diseño Figma", "Tipos de Publicación Personalizados"],
       stackTags: ["wordpress"]
     },
-    role: "UI/UX Designer & Developer - Complete project ownership from Figma design system creation to full WordPress development and deployment",
+    role: "Diseñador UI/UX y Desarrollador - Propiedad completa del proyecto desde la creación del sistema de diseño Figma hasta el desarrollo completo de WordPress y despliegue",
     features: [
       "Complete administrative dashboard for educational management",
       "Integrated blog system with content management",
@@ -267,22 +267,22 @@ const projects = [
   {
     id: "englacosmetics",
     title: "Engla Cosmetics",
-    subtitle: "E-commerce platform",
-    category: "E-commerce",
+    subtitle: "Plataforma de comercio electrónico",
+    category: "Comercio Electrónico",
     year: "2023",
-    duration: "October - December 2023",
+    duration: "Octubre - Diciembre 2023",
     status: "Live & Selling",
-    description: "Complete e-commerce solution for cosmetics brand",
-    overview: "E-commerce page designed & developed by our team completely. Full-featured online store with product catalog, shopping cart, and payment integration for cosmetics and beauty products.",
+    description: "Solución completa de comercio electrónico para marca de cosméticos",
+    overview: "Página de comercio electrónico diseñada y desarrollada completamente por nuestro equipo. Tienda en línea completa con catálogo de productos, carrito de compras e integración de pagos para cosméticos y productos de belleza.",
     website: "https://englacosmetics.com/",
     backgroundImage: "/ENGLA.png",
     screenshotImage: "/ENGLA.png",
     technology: {
       stack: "WordPress E-commerce",
-      technologies: ["WordPress", "WooCommerce", "Custom Theme", "Payment Gateways"],
+      technologies: ["WordPress", "WooCommerce", "Tema Personalizado", "Pasarelas de Pago"],
       stackTags: ["wordpress"]
     },
-    role: "Full-Stack E-commerce Developer - Complete project ownership including design, development, WooCommerce customization, and payment integration",
+    role: "Desarrollador Full-Stack de Comercio Electrónico - Propiedad completa del proyecto incluyendo diseño, desarrollo, personalización de WooCommerce e integración de pagos",
     features: [
       "Complete product catalog with detailed product pages",
       "Four specialized serum categories (Nutritive, Antioxidant, Anti-age, Decongestive)",
@@ -304,14 +304,14 @@ const projects = [
   },
   {
     id: "legal-insolvency",
-    title: "Legal Insolvency Platform",
-    subtitle: "Legal automation platform",
-    category: "Web App",
+    title: "SolventIQ",
+    subtitle: "Plataforma de automatización legal",
+    category: "Aplicación Web",
     year: "2025",
-    duration: "2025 - developing",
-    status: "In Development",
-    description: "AI-powered legal platform for insolvency filing assistance with expert validation",
-    overview: "Digitally assisted and fully expert-checked platform that helps GmbH directors and legal teams file insolvencies with confidence. Specialized service for Managing Directors of German GmbHs dealing with personal liability risks.",
+    duration: "2025 - desarrollando",
+    status: "En Desarrollo",
+    description: "Plataforma legal impulsada por IA para asistencia en presentación de insolvencia con validación experta",
+    overview: "Plataforma asistida digitalmente y completamente verificada por expertos que ayuda a directores de GmbH y equipos legales a presentar insolvencias con confianza. Servicio especializado para Directores Gerentes de GmbH alemanas que enfrentan riesgos de responsabilidad personal.",
     website: "#",
     backgroundImage: "/SOLVENTIQ.png",
     screenshotImage: "/SOLVENTIQ.png",
@@ -320,7 +320,7 @@ const projects = [
       technologies: ["Bubble.io", "OpenAI", "n8n"],
       stackTags: ["bubble", "n8n"]
     },
-    role: "Bubble.io Developer & Automation Specialist - AI integration, workflow automation, legal document processing, and expert consultation system implementation",
+    role: "Desarrollador Bubble.io y Especialista en Automatización - Integración de IA, automatización de flujos de trabajo, procesamiento de documentos legales e implementación de sistema de consulta experta",
     targetMarket: "Exclusively serving Managing Directors of German GmbHs facing insolvency-related legal challenges",
     features: [
       "AI-Powered Assessment: One-time assessment with 60-minute call with German insolvency lawyer (€450 incl. VAT)",
@@ -349,14 +349,12 @@ const projects = [
 
 const getStatusColor = (status: string) => {
   switch (status) {
-    case "En Vivo":
     case "Live":
     case "Live & Selling":
       return "bg-green-500/20 text-green-400 border-green-500/30"
-    case "En Desarrollo":
     case "In Development":
+    case "En Desarrollo":
       return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30"
-    case "Próximamente":
     case "Coming Soon":
       return "bg-blue-500/20 text-blue-400 border-blue-500/30"
     default:
@@ -442,7 +440,7 @@ export default function ProjectPage() {
 
         {/* Back Button */}
         <Link
-          href="/"
+          href="/#projects"
           className="absolute top-8 left-8 z-30 flex items-center gap-2 text-white hover:text-[#e78a53] transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />

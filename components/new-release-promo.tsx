@@ -4,7 +4,7 @@ export function NewReleasePromo() {
   return (
     <section className="mt-12 w-full">
       <div className="mx-auto max-w-4xl rounded-[40px] border border-black/5 dark:border-white/20 p-2 shadow-sm">
-        <div className="relative mx-auto h-[400px] max-w-4xl overflow-hidden rounded-[38px] border border-black/5 dark:border-white/20 bg-primary p-2 shadow-sm">
+        <div className="relative mx-auto h-[450px] max-w-4xl overflow-hidden rounded-[38px] border border-black/5 dark:border-white/20 bg-primary p-2 shadow-sm">
           {/* Subtle radial glow from center */}
           <div
             className="absolute inset-0 z-0"
@@ -21,8 +21,8 @@ export function NewReleasePromo() {
             }}
           />
 
-          <div className="relative z-10">
-            <div className="mt-8 text-center px-4">
+          <div className="relative z-20 h-full flex flex-col justify-center">
+            <div className="text-center px-4">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
                 Construimos tu confianza, no solo tu app
               </h2>
@@ -90,26 +90,9 @@ export function NewReleasePromo() {
                   </div>
                 </a>
               </div>
-              <p className="text-blue-300 text-sm mt-4 font-medium">2 espacios disponibles para Q4</p>
+              <p className="text-white/60 text-sm mt-6">¿Cómo trabajamos exactamente? Te lo explicamos en 15 minutos</p>
             </div>
 
-            {/* Stroked text wordmark */}
-            <h1
-              className="absolute inset-x-0 mt-[120px] text-center text-[60px] sm:text-[100px] md:text-[140px] lg:text-[190px] font-semibold text-transparent sm:mt-[30px] pointer-events-none overflow-hidden"
-              style={{
-                WebkitTextStroke: "1px currentColor",
-                color: "transparent",
-              }}
-              aria-hidden="true"
-            >
-              Stack House
-            </h1>
-            <h1
-              className="absolute inset-x-0 mt-[120px] text-center text-[60px] sm:text-[100px] md:text-[140px] lg:text-[190px] font-semibold text-primary sm:mt-[30px] pointer-events-none overflow-hidden"
-              aria-hidden="true"
-            >
-              Stack House
-            </h1>
           </div>
         </div>
       </div>

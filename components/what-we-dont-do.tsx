@@ -10,7 +10,7 @@ const whatWeDontDoData = [
   {
     title: "Contratos transparentes",
     subtitle: "Un solo precio. Para todo.",
-    description: "Te cotizamos una vez al inicio y ese es el precio final. Sin costos ocultos, sin 'ah, eso no estaba incluido', sin sorpresas a mitad del proyecto. Lo que acordamos es lo que pagas",
+    description: "Te cotizamos una vez al inicio y ese es el precio final. Sin sorpresas a mitad del proyecto.",
     icon: "/contratos-transparentes.png",
     color: "from-green-500/20 to-emerald-600/20",
     borderColor: "border-green-500/30"
@@ -18,15 +18,15 @@ const whatWeDontDoData = [
   {
     title: "8-12 semanas. No 6 meses de juntas.",
     subtitle: "",
-    description: "Odiamos las reuniones eternas tanto como tú. Lanzamos rápido porque sabemos que cada día sin tu sistema es dinero que pierdes. Reuniones cortas, avances reales",
+    description: "Odiamos las reuniones eternas. Lanzamos rápido porque sabemos que cada día sin tu sistema es dinero que pierdes. Reuniones cortas, avances reales.",
     icon: "/8-12-semanas.png",
     color: "from-yellow-500/20 to-orange-600/20", 
     borderColor: "border-yellow-500/30"
   },
   {
-    title: "Código tuyo, no nuestro rehén.",
+    title: "Infraestructura personalizada",
     subtitle: "",
-    description: "Cuando terminamos, TÚ eres dueño de todo. El código, los accesos, la documentación. No dependes de nosotros para siempre. Puedes irte con otro o mantenerlo tú mismo.",
+    description: "Completa propiedad de lo producido de principio a fin. Sin dependencia eterna, ni iteraciones infinitas. Apuntamos a que puedas mantenerlo tú mismo.",
     icon: "/codigo tuyo.png",
     color: "from-blue-500/20 to-cyan-600/20",
     borderColor: "border-blue-500/30"
@@ -61,7 +61,7 @@ export default function WhatWeDontDo() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Contratos transparentes
+            Sin letra chica
           </motion.h2>
           
           <motion.p
@@ -99,17 +99,12 @@ export default function WhatWeDontDo() {
                 transition: { duration: 0.2 }
               }}
             >
-              {/* Background Gradient */}
-              <div className={cn(
-                "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300",
-                `bg-gradient-to-br ${item.color}`
-              )} />
               
               {/* Content */}
               <div className="relative z-10">
                 {/* Icon */}
                 <motion.div
-                  className="mb-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center"
+                  className="mb-4 flex items-center justify-start"
                   whileHover={{ 
                     scale: 1.1, 
                     rotate: 5,
@@ -119,7 +114,7 @@ export default function WhatWeDontDo() {
                   <img
                     src={item.icon}
                     alt={item.title}
-                    className="w-8 h-8 object-contain"
+                    className="w-16 h-16 object-contain"
                   />
                 </motion.div>
 

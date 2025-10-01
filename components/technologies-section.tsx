@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function TechnologiesSection() {
   return (
-    <section className="relative py-12 sm:py-24 md:py-32">
+    <section className="relative py-8 sm:py-12 md:py-16">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Jake Kelley",
     username: "Fundador de Check my Checker",
-    body: "Trabajo fantástico entendiendo la visión del proyecto y ejecutando lo que necesitaba ser hecho",
+    body: "Ramon did a fantastic job of understanding the vision of the project and executing what needed to be done.",
   },
   {
     name: "Gandolf Finke",
@@ -13,18 +13,18 @@ const testimonials = [
   },
   {
     name: "Patrick",
-    username: "IDigitalSolutions",
-    body: "Solucionadores de problemas hábiles",
+    username: "IWebSolutions",
+    body: "After reworking the specification he gave us valuable feedback giving us opportunity to improve our specification.",
   },
   {
-    name: "Roger",
-    username: "",
+    name: "Roger Block",
+    username: "Aunes Oversettelser AS",
     body: "Definitivamente lo contrataremos para proyectos futuros.",
   },
   {
     name: "Rafael Núñez",
     username: "CEO & Fundador - Rayo Bebidas",
-    body: "Stack House construye con intención: nada está sobre-complicado y todo está diseñado de manera inteligente. Transformaron nuestra idea en una aplicación que realmente impulsa nuestro negocio.",
+    body: "Siento que hicieron un gran trabajo para automatizar mi contratación",
   },
 ]
 
@@ -75,8 +75,7 @@ export function TestimonialsSection() {
           </h2>
 
           <p className="mt-5 relative z-10 text-center text-lg text-zinc-500">
-            Desde ideas innovadoras hasta soluciones empresariales, Stack House se ha convertido en el socio tecnológico
-            de confianza para empresas de todo el mundo.
+            Desde ideas innovadoras hasta soluciones empresariales, en Stack House apuntamos a convertirnos tu socio tecnológico.
           </p>
         </div>
 

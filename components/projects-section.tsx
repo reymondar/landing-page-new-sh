@@ -7,13 +7,13 @@ import Link from "next/link"
 const projects = [
   {
     id: "business-profile-platform",
-    title: "Business Profile Platform",
-    subtitle: "Businesses listing platform",
-    category: "Web App",
+    title: "Confetti",
+    subtitle: "Plataforma de listado de empresas",
+    category: "Aplicación Web",
     year: "2024",
-    duration: "2025 - Present",
+    duration: "2025 - Presente",
     status: "Live",
-    description: "Modern business valuation and profile platform with secure listing capabilities",
+    description: "Plataforma moderna de valoración empresarial y perfiles con capacidades de listado seguro",
     website: "https://confettilist.com",
     backgroundImage: "/CONFETTI.png",
     screenshotImage: "/CONFETTI.png",
@@ -22,56 +22,56 @@ const projects = [
       technologies: ["Bubble.io"],
       stackTags: ["bubble"]
     },
-    role: "Full-stack development, SEO optimization, collaborative design implementation, and performance optimization"
+    role: "Desarrollo full-stack, optimización SEO, implementación de diseño colaborativo y optimización de rendimiento"
   },
   {
     id: "majella",
     title: "Majella",
-    subtitle: "Event managing platform (MVP)",
-    category: "Web App",
+    subtitle: "Plataforma de gestión de eventos (MVP)",
+    category: "Aplicación Web",
     year: "2025",
-    duration: "May 2025 - Present",
+    duration: "Mayo 2025 - Presente",
     status: "Live",
-    description: "Experiential engagement platform that transforms how people show up, participate, and build value at live events and beyond",
+    description: "Plataforma de participación experiencial que transforma cómo las personas aparecen, participan y construyen valor en eventos en vivo y más allá",
     website: "https://www.majella.io/",
     backgroundImage: "/MAJELLA.png",
     screenshotImage: "/MAJELLA.png",
     technology: {
-      stack: "Bubble.io + n8n",
-      technologies: ["Bubble.io", "n8n"],
-      stackTags: ["bubble", "n8n"]
+      stack: "Bubble.io + n8n + Lovable",
+      technologies: ["Bubble.io", "n8n", "Lovable"],
+      stackTags: ["bubble", "n8n", "lovable"]
     },
-    role: "Full-stack development, workflow automation design, custom scheduler implementation, and gamification system architecture"
+    role: "Desarrollo full-stack, diseño de automatización de flujos de trabajo, implementación de programador personalizado y arquitectura de sistema de gamificación"
   },
   {
     id: "golf-it",
     title: "Golf It",
-    subtitle: "AI-powered golf course finder",
-    category: "Progressive Web App",
+    subtitle: "Buscador de campos de golf con IA",
+    category: "Aplicación Web Progresiva",
     year: "2025",
-    duration: "January 2025 - Present",
-    status: "In Development",
-    description: "Mobile web app for finding golf courses with AI matchmaking",
+    duration: "Enero 2025 - Presente",
+    status: "En Desarrollo",
+    description: "Aplicación web móvil para encontrar campos de golf con emparejamiento por IA",
     website: "https://golfitargentina.com/",
     backgroundImage: "/Golf It.png",
     screenshotImage: "/Golf It.png",
     technology: {
       stack: "Lovable + n8n + Supabase",
-      technologies: ["Lovable", "React + TypeScript", "Supabase", "n8n Automation", "Mapbox Integration", "Progressive Web App"],
-      stackTags: ["react", "n8n"]
+      technologies: ["Lovable", "React + TypeScript", "Supabase", "Automatización n8n", "Integración Mapbox", "Aplicación Web Progresiva"],
+      stackTags: ["react", "n8n", "supabase"]
     },
-    role: "Full-Stack Developer & AI Specialist - Leading development of the PWA, AI matchmaking system, Mapbox integration, and n8n workflow automation"
+    role: "Desarrollador Full-Stack y Especialista en IA - Liderando el desarrollo de la PWA, sistema de emparejamiento por IA, integración Mapbox y automatización de flujos de trabajo n8n"
   },
   {
     id: "nitfy",
     title: "NiTFy",
-    subtitle: "Startup business website",
-    category: "Website",
-    year: "2023",
-    duration: "2023 - 2024",
-    status: "Coming Soon",
-    description: "High-performance startup website with perfect Lighthouse scores for wireless charging technology",
-    website: "#",
+    subtitle: "Sitio web de startup",
+    category: "Sitio Web",
+    year: "2024",
+    duration: "2024",
+    status: "Live",
+    description: "Sitio web de startup de alto rendimiento con puntuaciones perfectas de Lighthouse para tecnología de carga inalámbrica",
+    website: "https://nitcharge.com/",
     backgroundImage: "/NIT CHARGE.png",
     screenshotImage: "/NIT CHARGE.png",
     technology: {
@@ -79,7 +79,7 @@ const projects = [
       technologies: ["React.js", "Vercel", "Firestore"],
       stackTags: ["react"]
     },
-    role: "Designer & Developer - Complete independent development including UX/UI design, frontend development, performance optimization, and deployment"
+    role: "Diseñador y Desarrollador - Desarrollo independiente completo incluyendo diseño UX/UI, desarrollo frontend, optimización de rendimiento y despliegue"
   },
   {
     id: "delfino-lynch",
@@ -160,13 +160,13 @@ const projects = [
   },
   {
     id: "legal-insolvency",
-    title: "Legal Insolvency Platform",
-    subtitle: "Legal automation platform",
-    category: "Web App",
+    title: "SolventIQ",
+    subtitle: "Plataforma de automatización legal",
+    category: "Aplicación Web",
     year: "2025",
-    duration: "2025 - developing",
-    status: "In Development",
-    description: "AI-powered legal platform for insolvency filing assistance with expert validation",
+    duration: "2025 - desarrollando",
+    status: "En Desarrollo",
+    description: "Plataforma legal impulsada por IA para asistencia en presentación de insolvencia con validación experta",
     website: "#",
     backgroundImage: "/SOLVENTIQ.png",
     screenshotImage: "/SOLVENTIQ.png",
@@ -175,7 +175,7 @@ const projects = [
       technologies: ["Bubble.io", "OpenAI", "n8n"],
       stackTags: ["bubble", "n8n"]
     },
-    role: "Bubble.io Developer & Automation Specialist - AI integration, workflow automation, legal document processing, and expert consultation system implementation"
+    role: "Desarrollador Bubble.io y Especialista en Automatización - Integración de IA, automatización de flujos de trabajo, procesamiento de documentos legales e implementación de sistema de consulta experta"
   }
 ]
 
@@ -185,6 +185,7 @@ const getStatusColor = (status: string) => {
     case "Live & Selling":
       return "bg-green-500/20 text-green-400 border-green-500/30"
     case "In Development":
+    case "En Desarrollo":
       return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30"
     case "Coming Soon":
       return "bg-blue-500/20 text-blue-400 border-blue-500/30"
@@ -195,7 +196,7 @@ const getStatusColor = (status: string) => {
 
 export function ProjectsSection() {
   return (
-    <section className="relative py-12 px-4">
+    <section className="relative py-12 sm:py-16 md:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -205,12 +206,9 @@ export function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent mb-4">
-            Nuestros Proyectos
+          <h2 className="from-foreground/60 via-foreground to-foreground/60 dark:from-muted-foreground/55 dark:via-foreground dark:to-muted-foreground/55 mt-5 bg-gradient-to-r bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px] __className_bb4e88 relative z-10">
+            Únete al club de fundadores con éxito
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
-            Descubre las soluciones innovadoras que hemos creado para empresas de diversas industrias
-          </p>
         </motion.div>
 
         {/* Projects Grid */}

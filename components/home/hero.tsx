@@ -52,7 +52,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mx-auto mb-12 max-w-2xl text-sm sm:text-base md:text-lg text-muted-foreground"
             >
-              No te adaptamos a un software. Creamos el software que se adapta a ti. Automatizamos lo que te roba tiempo. Digitalizamos lo que frena tu crecimiento.
+              No te adaptamos a un software. Creamos el software que se adapta a vos. Automatizamos lo que te roba tiempo. Digitalizamos lo que frena tu crecimiento.
             </motion.p>
 
             <motion.div
